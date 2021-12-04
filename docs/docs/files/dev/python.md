@@ -1,0 +1,39 @@
+---
+
+[//]: # (@formatter:off)
+layout: page
+title: Python
+permalink: /docs/dev/python
+parent: Developer
+grand_parent: Tips & Tricks
+nav_order: 2
+last_modified_date: Dec 04 2021 16:20
+---
+[//]: # (@formatter:on)
+
+# Python
+
+### pip install from git
+
+```bash
+# hash
+pip install git+git://github.com/aladagemre/django-notification.git@2927346f4c513a217ac8ad076e494dd1adbf70e1
+
+# branch
+pip install git+git://github.com/aladagemre/django-notification.git@cool-feature-branch
+
+# branch source bundle
+pip install https://github.com/aladagemre/django-notification/archive/cool-feature-branch.tar.gz
+
+# tag
+pip install git+git://github.com/aladagemre/django-notification.git@v2.1.0
+
+# tag source bundle
+pip install https://github.com/aladagemre/django-notification/archive/v2.1.0.tar.gz
+```
+
+### Update all python packages
+
+```bash
+pip3 list --format=freeze | cut -d'=' -f 1 | xargs -n1 pip3 install --upgrade
+```

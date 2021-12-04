@@ -1,0 +1,67 @@
+---
+
+[//]: # (@formatter:off)
+layout: page
+title: Rust tools setup
+permalink: /docs/dev/rust
+parent: Developer
+grand_parent: Tips & Tricks
+nav_order: 3
+last_modified_date: Dec 04 2021 16:20
+---
+[//]: # (@formatter:on)
+
+# Rust tools setup
+
+### Installing
+
+[Original installation instructions for all OS](https://www.rust-lang.org/tools/install)
+
+#### MacOS Homebrew
+
+```shell
+brew install rustup-init
+
+# It will install rustc and cargo
+```
+
+### Rust documentation
+
+```shell
+rustup doc
+```
+
+### To update
+
+```shell
+rustup update
+```
+
+### To create a new project
+
+```shell
+# For binary project
+cargo new --bin <project_name>
+
+# For library project
+cargo new --lib <library_name>
+```
+
+### To compile
+
+```shell
+# To compile and run at the same time
+cargo run
+
+# For development/debug build
+cargo build
+
+# For release build
+cargo build --release
+```
+
+### Idiomatic rust check
+
+```shell
+cargo clippy
+```
