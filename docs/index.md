@@ -5,17 +5,8 @@ search_exclude: true
 footer_exclude: true
 ---
 
-### SURENDRA POLAM
 
-_Software Engineer in Helsinki, Finland_
-
-Howdy, I’m Surendra. I’m a software engineer living in Espoo, Finland. I am a fan of technology, programming, and
+Howdy, I’m Surendra. I’m a software engineer living in Helsinki, Finland. I am a fan of technology, programming, and
 entrepreneurship. I’m also interested in innovation and astronomy.
 
-#### WORK
-
-**Zalando**
-
-#### EDUCATION
-
-**Purdue University Northwest**
+<div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="dark" data-type="VERTICAL" data-vanity="spolam" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://fi.linkedin.com/in/spolam?trk=profile-badge">Surendra Polam</a></div>
