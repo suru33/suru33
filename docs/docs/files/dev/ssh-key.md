@@ -6,7 +6,7 @@ title: SSH Key
 permalink: /docs/dev/ssh-key
 parent: Developer
 grand_parent: Tips & Tricks
-last_modified_date: Dec 04 2021 16:20
+last_modified_date: Dec 28 2022 17:58
 ---
 [//]: # (@formatter:on)
 
@@ -14,6 +14,8 @@ last_modified_date: Dec 04 2021 16:20
 
 ```bash
 ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+# or the new algorithm
+ssh-keygen -t ed25519 -C "your_email@example.com"
 
 eval "$(ssh-agent -s)"
 ```
@@ -31,7 +33,6 @@ Host *
 
 ssh-add -K ~/.ssh/id_rsa 
 # -K is deprecated in new versions of MacOS
-
 ssh-add --apple-use-keychain ~/.ssh/id_rsa
 ```
 
