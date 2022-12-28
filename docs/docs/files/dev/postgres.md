@@ -7,7 +7,7 @@ permalink: /docs/dev/postgres-installation
 parent: Developer
 grand_parent: Tips & Tricks
 nav_order: 1
-last_modified_date: Dec 04 2021 16:20
+last_modified_date: Dec 28 2022 17:58
 ---
 [//]: # (@formatter:on)
 
@@ -55,20 +55,20 @@ last_modified_date: Dec 04 2021 16:20
 
 ```shell
 # Postgres config
-export PGHOME="$HOME/dev/postgres"
-export PGLOGFILE="$PGHOME/postgres.log"
-export PGDATA="$PGHOME/pgdata"
+export PG_HOME="$HOME/dev/postgres"
+export PG_LOG_FILE="$PG_HOME/postgres.log"
+export PG_DATA="$PG_HOME/pgdata"
 
-export PATH="$PGHOME/pgsql/bin:$PATH"
+export PATH="$PG_HOME/pgsql/bin:$PATH"
 
-alias start_postgres="pg_ctl -D ${PGDATA} -l ${PGLOGFILE} start"
-alias stop_postgres="pg_ctl -D ${PGDATA} -l ${PGLOGFILE} stop"
+alias start_postgres="pg_ctl -D ${PG_DATA} -l ${PG_LOG_FILE} start"
+alias stop_postgres="pg_ctl -D ${PG_DATA} -l ${PG_LOG_FILE} stop"
 ```
 
 ### InitDB (create database folder structure)
 
 ```shell
-initdb ${PGDATA}
+initdb ${PG_DATA}
 ```
 
 ### Create user/role

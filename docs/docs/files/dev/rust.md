@@ -7,7 +7,7 @@ permalink: /docs/dev/rust
 parent: Developer
 grand_parent: Tips & Tricks
 nav_order: 3
-last_modified_date: Dec 04 2021 16:20
+last_modified_date: Dec 28 2022 17:58
 ---
 [//]: # (@formatter:on)
 
@@ -22,6 +22,7 @@ last_modified_date: Dec 04 2021 16:20
 ```shell
 brew install rustup-init
 
+# run `rustup-init`
 # It will install rustc and cargo
 ```
 
